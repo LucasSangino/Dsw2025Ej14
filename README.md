@@ -1,6 +1,9 @@
 # Ejercicio N° 14
 ## Desarrollo de Software
 ### API Web
+#Alumnos:
+Sangino Lucas Daniel - 57990
+Gonzalez Gonzalo Nahuel - 56184
 
 ## Tareas
 Bifurcar (fork) el repositorio.
