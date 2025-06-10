@@ -6,9 +6,9 @@
         
         public IPersistenciaEnMemoria  _iPersistencia;
 
-        public void Get() {
-        
-        
+        public ProductsController(IPersistenciaEnMemoria iPersistencia) {
+
+            _iPersistencia= iPersistencia;
         }
 
 
