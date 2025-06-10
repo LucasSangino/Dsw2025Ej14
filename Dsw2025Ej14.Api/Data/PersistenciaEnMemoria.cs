@@ -3,20 +3,22 @@
 {
     using System.Text.Json;
     using Dsw2025Ej14.Api.Domain;
-    public class PersistenciaEnMemoria
+    public class PersistenciaEnMemoria : IPersistenciaEnMemoria
     {
         public List<Product> ListaDeProductos { get; set; }
-        
 
 
-        public PersistenciaEnMemoria() {
 
-           
+        public PersistenciaEnMemoria()
+        {
+
+
         }
 
-        public void LoadsProducts() {
+        public void LoadsProducts()
+        {
 
-            var Taskjson =  File.ReadAllText("Data\\products.json");
+            var Taskjson = File.ReadAllText("Data\\products.json");
 
 
             ListaDeProductos = JsonSerializer.Deserialize<List<Product>>(Taskjson, new JsonSerializerOptions
